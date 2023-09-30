@@ -1,0 +1,39 @@
+* {
+    border: 0;
+    margin: 0;
+}
+
+.tela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.imagem-central{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.icones {
+    max-height: 30px;
+    max-width: 30px;
+    border-radius: 50%;
+}
+
+.sidebar {
+    background-color: rgb(28, 28, 58);
+    background-size: cover;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
