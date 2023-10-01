@@ -18,16 +18,22 @@
 }
 
 .imagem-central{
-    max-width: 100%;
-    height: auto;
+    max-width: 100vh;
+    height: 40vh;
+    width: 30vh;
     display: block;
     margin: 0 auto;
 }
 
 .icones {
-    max-height: 30px;
-    max-width: 30px;
+    max-height: 4vh;
+    max-width: 4vh;
     border-radius: 50%;
+}
+
+.perfil {
+    justify-content: center;
+    align-items: center;
 }
 
 .sidebar {
@@ -40,4 +46,121 @@
     position: absolute;
     border: 0;
     margin: 0;
+}
+
+.sair, .usuario, .email, .nome {
+    display: none;
+}
+
+.perfil {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+hr {
+    display: none;
+}
+
+@media(min-width: 481px) {
+    .geral {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .sidebar {
+        height: 100vh;
+        width: 11vh;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .icones {
+        margin-bottom: 1vh;
+        max-height: 6vh;
+        max-width: 6vh;
+    }
+
+    .sair, .email, .usuario, .nome {
+        display: flex;
+        color: yellow;
+        font-family: Verdana;
+        justify-content: center;
+    }
+
+    .sair {
+        height: 3.5vh;
+        width: 6vh;
+        align-items: center;
+        font-size:x-large;
+        background-color: yellow;
+        color: rgb(28, 28, 58);
+        border-radius: 1vh;
+    }
+
+    .email {
+        font-size: x-small;
+        margin-bottom: 1.5vh;
+    }
+
+    .nome {
+        margin-bottom: 2vh;
+    }
+
+    .perfil {
+        margin-bottom: 2vh;
+        border-bottom: 0.3vh solid yellow;
+    }
+
+    .perfil .icones {
+        margin-top: 1vh;
+    }
+}
+
+@media(min-width: 1280px) {
+    .sidebar {
+        width: 40vh;
+    }
+
+    .personagem {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 3vh;
+    }
+
+    .personagem .icones {
+        justify-content: left;
+    }
+
+    .perfil {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .sair {
+        height: 5vh;
+        width: 35vh;
+    }
+
+    .foto {
+        width: 50%;
+        padding-left: 2.4vh;
+    }
+
+    .dados {
+        padding-right: 10vh;
+    }
+
+    .nomes {
+        width: 50%;
+        padding-right: 15vh;
+    }
+
+    .sair {
+        margin-top: 30vh;
+    }
 }
